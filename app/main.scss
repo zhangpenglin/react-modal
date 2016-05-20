@@ -1,0 +1,50 @@
+$modal-color:orange;
+
+.modalMask {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  .modal {
+    width: 300px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-left: -150px;
+    margin-top: -150px;
+    .title {
+      background-color: $modal-color;
+      height: 30px;
+      line-height: 30px;
+      width: 100%;
+      color:#fff;
+      font-size: 12px;
+      padding:0 20px;
+      box-sizing: border-box;
+    }
+    .content {
+      box-sizing: border-box;
+      padding: 20px;
+      min-height: 80px;
+      background-color: #fff;
+      width: 100%;
+      .text{
+
+      }
+      .buttons{
+        margin-top: 10px;
+        text-align: center;
+        button{
+          background-color: $modal-color;
+          padding: 6px 10px;
+          font-size: 14px;
+          color:#fff;
+          margin-right: 20px;
+          border: none;
+        }
+      }
+    }
+  }
+}
